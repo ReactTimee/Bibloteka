@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblotēka</title>
+</head>
+<body>
+  <h2>Pievienot grāmatu</h2>
+  <form id="addBookForm">
+    <label for="author">Authors:</label>
+    <input type="text" id="author" name="author" required>
+    <label for="bookName">Grāmatas nosaukums:</label>
+    <input type="text" id="bookName" name="bookName" required>
+    <button type="submit">Pievienot</button>
+  </form>
+  <div id="addBookMessage"></div>
+
+  <h2>Izņemt grāmatu</h2>
+  <form id="takeBookForm">
+    <label for="readerName">Lasītāja vārds:</label>
+    <input type="text" id="readerName" name="readerName" required>
+    <label for="email">Epasts:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="bookSelect">Pieejamās grāmatas:</label>
+    <select id="bookSelect" name="bookSelect" required></select>
+    <button type="submit">Izņemt</button>
+  </form>
+  <div id="takeBookMessage"></div>
+
+  <h2>Grāmatu status</h2>
+  <div id="bookStatus"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
